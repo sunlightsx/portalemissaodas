@@ -1,4 +1,17 @@
 <html lang="pt-BR">
+.footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center;padding:16px 24px;border-top:1px dashed var(--line);color:var(--muted);font-size:12px}
+code{background:rgba(148,163,184,.12);padding:.25em .5em;border-radius:6px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.note{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<article class="card" itemscope itemtype="https://schema.org/Organization">
+<header>
+<div class="logo" aria-hidden="true">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <path d="M4 7h16M4 12h10M4 17h6" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
 </svg>
 </div>
@@ -10,8 +23,8 @@
 
 
 <section class="grid">
-<div class="section">
-<h2>Identificação</h2>
+<div class="section" aria-labelledby="identificacao">
+<h2 id="identificacao">Identificação</h2>
 <div class="kv">
 <b>CNPJ</b>
 <div><span itemprop="taxID">23.281.245/0001-30</span></div>
@@ -26,17 +39,18 @@
 
 
 <b>Data de Abertura</b>
-<div>15/09/2015</div>
+<div><time datetime="2015-09-15">15/09/2015</time></div>
 
 
 <b>CNAE Principal</b>
 <div>4322-3/02 — Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração</div>
 </div>
+<p class="note">*Dados estáticos para demonstração. Edite conforme necessário.</p>
 </div>
 
 
-<div class="section">
-<h2>Endereço</h2>
+<div class="section" aria-labelledby="endereco">
+<h2 id="endereco">Endereço</h2>
 <div class="kv" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 <b>Logradouro</b>
 <div><span itemprop="streetAddress">Rua Argemiro Ferreira de Borba, 300 — Lot Recanto da Barra</span></div>
@@ -54,8 +68,8 @@
 
 
 <div class="footer">
-<div> <time datetime="2025-08-22">22/08/2025</time>.</div>
-<div>Arquivo: <code>splitmar-23281245000130.html</code></div>
+<div>Última revisão: <time datetime="2025-08-22">22/08/2025</time> • Arquivo: <code>index.html</code></div>
+<div>Pronto para <strong>GitHub Pages</strong> (raiz do repo ou pasta /docs).</div>
 </div>
 </article>
 </div>
